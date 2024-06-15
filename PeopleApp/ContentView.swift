@@ -25,7 +25,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack(path: $path) {
             VStack {
-                Image(systemName: "globe")
+                Image(systemName: "star.fill")
                     .imageScale(.large)
                     .foregroundStyle(.tint)
                     .onTapGesture {
