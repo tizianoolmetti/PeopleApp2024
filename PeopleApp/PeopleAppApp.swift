@@ -17,7 +17,7 @@ struct PeopleAppApp: App {
                         Symbols.person
                         Text("Home")
                     }
-                ContentView()
+                SettingsView()
                     .tabItem {
                         Symbols.gear
                         Text("Settings")

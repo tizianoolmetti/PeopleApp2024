@@ -20,35 +20,34 @@ struct DetailsView: View {
         ZStack {
             background
             
-            ScrollView {
-                
-                VStack(alignment: .leading,
-                       spacing: 18) {
-                    
-                    avatar
-                    
-                    Group {
-                        general
-                        link
-                    }
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 18)
-                    .background(Theme.detailBackground, in: RoundedRectangle(cornerRadius: 16,
-                                                                             style: .continuous))
-                    
-                }
-                       .padding()
+            switch vm.dataModel.viewState {
+            case .loaded:
+                contentView
+            case .loading:
+                ProgressView()
+            default:
+                EmptyView()
             }
         }
+        .ignoresSafeArea(edges: .bottom)
         .navigationTitle("Details")
-        .onAppear {
-            vm.loadData(userId: userId )
+        .task {
+             await vm.loadData(userId: userId )
         }
+        .errorAlert(
+            isPresented: vm.hasError,
+            errorMessage: vm.dataModel.networkingError?.localizedDescription,
+            retryAction: {
+                Task { await vm.loadData(userId: userId) }
+            },
+            cancelAction: {
+                vm.hasError.wrappedValue = false
+            })
     }
 }
 
 private extension DetailsView {
-    
+    @ViewBuilder
     var background: some View {
         Theme.background
             .ignoresSafeArea(edges: .top)
@@ -56,8 +55,7 @@ private extension DetailsView {
     
     @ViewBuilder
     var avatar: some View {
-        
-        if let avatarAbsoluteString = vm.userInfo?.data.avatar,
+        if let avatarAbsoluteString = vm.dataModel.userInfo?.data.avatar,
            let avatarUrl = URL(string: avatarAbsoluteString) {
             
             AsyncImage(url: avatarUrl) { image in
@@ -68,6 +66,8 @@ private extension DetailsView {
                     .clipped()
             } placeholder: {
                 ProgressView()
+                    .frame(height: 250)
+                    .frame(maxWidth: .infinity)
             }
             .clipShape(RoundedRectangle(cornerRadius: 16,
                                         style: .continuous))
@@ -78,9 +78,9 @@ private extension DetailsView {
     @ViewBuilder
     var link: some View {
         
-        if let supportAbsoluteString = vm.userInfo?.support.url,
+        if let supportAbsoluteString = vm.dataModel.userInfo?.support.url,
            let supportUrl = URL(string: supportAbsoluteString),
-           let supportTxt = vm.userInfo?.support.text {
+           let supportTxt = vm.dataModel.userInfo?.support.text {
             
             Link(destination: supportUrl) {
                 
@@ -108,6 +108,29 @@ private extension DetailsView {
             
         }
     }
+    
+    @ViewBuilder
+    var contentView: some View {
+        ScrollView {
+            VStack(alignment: .leading,
+                   spacing: 18) {
+                
+                avatar
+                
+                Group {
+                    general
+                    link
+                }
+                .padding(.horizontal, 8)
+                .padding(.vertical, 18)
+                .background(Theme.detailBackground, in: RoundedRectangle(cornerRadius: 16,
+                                                                         style: .continuous))
+                
+            }
+                   .padding()
+                   .padding(.bottom, 48)
+        }
+    }
 }
 
 private extension DetailsView {
@@ -116,7 +139,7 @@ private extension DetailsView {
         VStack(alignment: .leading,
                spacing: 8) {
             
-            PillView(id: vm.userInfo?.data.id ?? 0)
+            PillView(id: vm.dataModel.userInfo?.data.id ?? 0)
             
             Group {
                 firstname
@@ -135,7 +158,7 @@ private extension DetailsView {
                 .weight(.semibold)
             )
         
-        Text(vm.userInfo?.data.firstName ?? "-")
+        Text( vm.dataModel.userInfo?.data.firstName ?? "-")
             .font(
                 .system(.subheadline, design: .rounded)
             )
@@ -151,7 +174,7 @@ private extension DetailsView {
                 .weight(.semibold)
             )
         
-        Text(vm.userInfo?.data.lastName ?? "-")
+        Text( vm.dataModel.userInfo?.data.lastName ?? "-")
             .font(
                 .system(.subheadline, design: .rounded)
             )
@@ -167,7 +190,7 @@ private extension DetailsView {
                 .weight(.semibold)
             )
         
-        Text(vm.userInfo?.data.email ?? "-")
+        Text(vm.dataModel.userInfo?.data.email ?? "-")
             .font(
                 .system(.subheadline, design: .rounded)
             )

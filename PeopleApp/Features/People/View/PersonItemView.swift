@@ -22,6 +22,8 @@ struct PersonItemView: View {
                     .clipped()
             } placeholder: {
                 ProgressView()
+                    .frame(height: 130)
+                    .frame(maxWidth: .infinity)
             }
             
             VStack(alignment: .leading) {
@@ -54,7 +56,7 @@ struct PersonItemView: View {
 struct PersonItemView_Previews: PreviewProvider {
     
     static var previewUser: User {
-        let users =  try! StaticJSONMapper.decode(from: "UsersStaticData",
+        let users =  try! StaticJSONMapper.decode(from: JSONOptionType.users.rawValue,
                                                   type: UserResponse.self)
         return users.data.first!
     }
