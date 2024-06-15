@@ -41,7 +41,19 @@
 		45EDD9F82C1D6BAB003DABE9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDD9F72C1D6BAB003DABE9 /* SettingsView.swift */; };
 		45EDD9FA2C1D6ED6003DABE9 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDD9F92C1D6ED6003DABE9 /* Endpoint.swift */; };
 		45EDD9FC2C1D7B55003DABE9 /* OnFirstAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDD9FB2C1D7B55003DABE9 /* OnFirstAppear.swift */; };
+		45EDDA0D2C1D8B73003DABE9 /* StaticJSONMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDDA0C2C1D8B73003DABE9 /* StaticJSONMapperTests.swift */; };
+		45EDDA122C1D953B003DABE9 /* CreateValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDDA112C1D953B003DABE9 /* CreateValidatorTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45EDDA052C1D8B3A003DABE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4598A1092C1AA6AF009CA770 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4598A1102C1AA6AF009CA770;
+			remoteInfo = PeopleApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4598A1112C1AA6AF009CA770 /* PeopleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,10 +92,20 @@
 		45EDD9F72C1D6BAB003DABE9 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		45EDD9F92C1D6ED6003DABE9 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		45EDD9FB2C1D7B55003DABE9 /* OnFirstAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnFirstAppear.swift; sourceTree = "<group>"; };
+		45EDDA012C1D8B3A003DABE9 /* PeopleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeopleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45EDDA0C2C1D8B73003DABE9 /* StaticJSONMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticJSONMapperTests.swift; sourceTree = "<group>"; };
+		45EDDA112C1D953B003DABE9 /* CreateValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateValidatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4598A10E2C1AA6AF009CA770 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45EDD9FE2C1D8B3A003DABE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -97,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				4598A1132C1AA6AF009CA770 /* PeopleApp */,
+				45EDDA022C1D8B3A003DABE9 /* PeopleAppTests */,
 				4598A1122C1AA6AF009CA770 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				4598A1112C1AA6AF009CA770 /* PeopleApp.app */,
+				45EDDA012C1D8B3A003DABE9 /* PeopleAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -383,6 +407,55 @@
 			path = UserDefaults;
 			sourceTree = "<group>";
 		};
+		45EDDA022C1D8B3A003DABE9 /* PeopleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				45EDDA0E2C1D951B003DABE9 /* Feature */,
+				45EDDA0A2C1D8B4E003DABE9 /* Base */,
+			);
+			path = PeopleAppTests;
+			sourceTree = "<group>";
+		};
+		45EDDA0A2C1D8B4E003DABE9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				45EDDA0B2C1D8B56003DABE9 /* Mapper */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		45EDDA0B2C1D8B56003DABE9 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				45EDDA0C2C1D8B73003DABE9 /* StaticJSONMapperTests.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		45EDDA0E2C1D951B003DABE9 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				45EDDA0F2C1D9523003DABE9 /* Create */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		45EDDA0F2C1D9523003DABE9 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				45EDDA102C1D952D003DABE9 /* Validator */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		45EDDA102C1D952D003DABE9 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				45EDDA112C1D953B003DABE9 /* CreateValidatorTests.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -403,6 +476,24 @@
 			productReference = 4598A1112C1AA6AF009CA770 /* PeopleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		45EDDA002C1D8B3A003DABE9 /* PeopleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45EDDA072C1D8B3A003DABE9 /* Build configuration list for PBXNativeTarget "PeopleAppTests" */;
+			buildPhases = (
+				45EDD9FD2C1D8B3A003DABE9 /* Sources */,
+				45EDD9FE2C1D8B3A003DABE9 /* Frameworks */,
+				45EDD9FF2C1D8B3A003DABE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45EDDA062C1D8B3A003DABE9 /* PBXTargetDependency */,
+			);
+			name = PeopleAppTests;
+			productName = PeopleAppTests;
+			productReference = 45EDDA012C1D8B3A003DABE9 /* PeopleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -415,6 +506,10 @@
 				TargetAttributes = {
 					4598A1102C1AA6AF009CA770 = {
 						CreatedOnToolsVersion = 15.3;
+					};
+					45EDDA002C1D8B3A003DABE9 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 4598A1102C1AA6AF009CA770;
 					};
 				};
 			};
@@ -432,6 +527,7 @@
 			projectRoot = "";
 			targets = (
 				4598A1102C1AA6AF009CA770 /* PeopleApp */,
+				45EDDA002C1D8B3A003DABE9 /* PeopleAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -445,6 +541,13 @@
 				4598A13B2C1ABD2D009CA770 /* SingleUserData.json in Resources */,
 				4598A11C2C1AA6B1009CA770 /* Preview Assets.xcassets in Resources */,
 				4598A1192C1AA6B1009CA770 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45EDD9FF2C1D8B3A003DABE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +591,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		45EDD9FD2C1D8B3A003DABE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45EDDA122C1D953B003DABE9 /* CreateValidatorTests.swift in Sources */,
+				45EDDA0D2C1D8B73003DABE9 /* StaticJSONMapperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45EDDA062C1D8B3A003DABE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4598A1102C1AA6AF009CA770 /* PeopleApp */;
+			targetProxy = 45EDDA052C1D8B3A003DABE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4598A11D2C1AA6B1009CA770 /* Debug */ = {
@@ -668,6 +788,42 @@
 			};
 			name = Release;
 		};
+		45EDDA082C1D8B3A003DABE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9Y2T9A6MZZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tolmetti.PeopleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeopleApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PeopleApp";
+			};
+			name = Debug;
+		};
+		45EDDA092C1D8B3A003DABE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9Y2T9A6MZZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tolmetti.PeopleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeopleApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PeopleApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -685,6 +841,15 @@
 			buildConfigurations = (
 				4598A1202C1AA6B1009CA770 /* Debug */,
 				4598A1212C1AA6B1009CA770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45EDDA072C1D8B3A003DABE9 /* Build configuration list for PBXNativeTarget "PeopleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45EDDA082C1D8B3A003DABE9 /* Debug */,
+				45EDDA092C1D8B3A003DABE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

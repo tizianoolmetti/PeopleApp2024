@@ -34,36 +34,6 @@
             endingLineNumber = "106"
             landmarkName = "loadNextPage()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "25CF7BB0-AC93-473F-87C6-51B369D5770A - 2755e221f655bc0d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PeopleApp.PeopleViewModel.loadNextPage() async -&gt; ()"
-                  moduleName = "PeopleApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleApp/Features/People/ViewModel/PeopleViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "106"
-                  endingLineNumber = "106">
-               </Location>
-               <Location
-                  uuid = "25CF7BB0-AC93-473F-87C6-51B369D5770A - 2de6ad23f9df77a6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for PeopleApp.PeopleViewModel.loadNextPage() async -&gt; ()"
-                  moduleName = "PeopleApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleApp/Features/People/ViewModel/PeopleViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "106"
-                  endingLineNumber = "106">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -17,6 +17,7 @@ struct StaticJSONMapper {
     static func decode<T: Codable>(from fileName: String, type: T.Type) throws -> T {
         
         guard
+            !fileName.isEmpty,
             let path = Bundle.main.path(forResource: fileName, ofType: "json"),
             let data = FileManager.default.contents(atPath: path) else {
             throw StaticJSONMapperError.fileNotFound
