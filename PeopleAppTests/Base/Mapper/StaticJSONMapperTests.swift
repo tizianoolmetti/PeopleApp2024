@@ -35,9 +35,16 @@ class StaticJSONMapperTests: XCTestCase {
         // Arrange
         let invalidFileName = "invalidFileName"
         // Act and Assert
-        XCTAssertThrowsError(try StaticJSONMapper.decode(from: invalidFileName, type: UserResponse.self)) {
-            error in
-            XCTAssertEqual(error as? StaticJSONMapperError, StaticJSONMapperError.fileNotFound)
+        do {
+            let _ = try StaticJSONMapper.decode(from: invalidFileName, type: UserResponse.self)
+        } catch {
+            guard let error = error as? StaticJSONMapperError else {
+                XCTFail("Error should be StaticJSONMapperError")
+                return
+            }
+            // Assert
+            XCTAssertThrowsError(try StaticJSONMapper.decode(from: invalidFileName, type: UserResponse.self))
+            XCTAssertEqual(error, StaticJSONMapperError.fileNotFound)
         }
     }
     

@@ -42,7 +42,7 @@ class CreateValidatorTests: XCTestCase {
         let newPerson = NewPerson(firstName: "John", lastName: "Doe", job: "")
         
         XCTAssertThrowsError(try sut.validate(newPerson)) { error in
-            XCTAssertEqual(error as? CreateValidatorError, CreateValidatorError.invalidJob)
+            XCTAssertEqual(error as? CreateValidatorError, CreateValidatorError.invalidLastName)
         }
     }
     
