@@ -10,7 +10,10 @@ import SwiftUI
 struct PeopleView: View {
     
     // MARK: - StateObject
-    @StateObject private var vm = PeopleViewModel()
+    @StateObject private var vm: PeopleViewModel
+    
+    // MARK: - Initializer
+    init(vm: PeopleViewModel) { _vm = StateObject(wrappedValue: vm)}
     
     // MARK: - State
     @State private var showCheckmarkView = false
@@ -29,7 +32,7 @@ struct PeopleView: View {
             ToolbarItem(placement: .primaryAction) { create }
         }
         .sheet(isPresented: vm.shouldShowCreate) {
-            CreateView {
+            vm.navigateToCreate {
                 haptic(.success)
                 withAnimation(.spring().delay(0.25)) {
                     showCheckmarkView.toggle()
@@ -98,7 +101,7 @@ private extension PeopleView {
                       spacing: 16) {
                 ForEach(vm.dataModel.users, id: \.id) { user in
                     NavigationLink {
-                        DetailsView(userId: user.id)
+                        vm.navigateToDetails(id: user.id)
                     } label: {
                         PersonItemView(user: user)
                             .accessibilityIdentifier("item_\(user.id)")
@@ -110,7 +113,7 @@ private extension PeopleView {
                     }
                 }
             }
-            .padding()
+                      .padding()
         }
         .refreshable { await vm.loadData() }
         .overlay(alignment:.bottom) {
@@ -119,7 +122,7 @@ private extension PeopleView {
             }
         }
     }
-        
+    
     
     @ViewBuilder
     var contentView: some View {
@@ -134,6 +137,6 @@ private extension PeopleView {
 // MARK: - Preview
 struct PeopleView_Previews: PreviewProvider {
     static var previews: some View {
-        PeopleView()
+        PeopleView(vm: AppDIContainer.shared.makePeopleViewModel())
     }
 }

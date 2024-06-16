@@ -22,8 +22,15 @@ final class PeopleViewModel: ObservableObject {
     @Published private(set) var dataModel = PeopleViewDataModel()
     
     // MARK: - Properties
+    private var router: AppRouter
+    private let fetchPeopleUseCase: FetchPeopleUseCase
     private var page: Int = 1
     private var totalPage: Int?
+   
+    init(router: AppRouter, fetchPeopleUseCase: FetchPeopleUseCase){
+        self.router = router
+        self.fetchPeopleUseCase = fetchPeopleUseCase
+    }
     
     // MARK: - Computed Properties
     var shouldShowCreate: Binding<Bool> {
@@ -70,7 +77,7 @@ final class PeopleViewModel: ObservableObject {
 //      dataModel.users = try! StaticJSONMapper.decode(from: JSONOptionType.users.rawValue, type: UserResponse.self).data
         
         do {
-            let response = try await HTTPClient.shared.request(endpoint: .people(page: page), type: UserResponse.self)
+            let response = try await fetchPeopleUseCase.fetchPeople(page: page)
             dataModel.users = response.data
             totalPage = response.totalPages
             dataModel.viewState = .loaded
@@ -127,5 +134,18 @@ final class PeopleViewModel: ObservableObject {
     func hasReachedEndOfList(_ user: User) -> Bool {
         guard let lastuser = dataModel.users.last else { return false }
         return user.id == lastuser.id
+    }
+}
+
+// MARK: - Navigation
+extension PeopleViewModel {
+    
+    @ViewBuilder
+    func navigateToDetails(id: Int) -> some View {
+        router.internalRoute(to: .userDetails(id: id))
+    }
+    
+    func navigateToCreate(completion: @escaping () -> Void) -> some View {
+        router.internalRoute(to: .create(successHandler: completion))
     }
 }

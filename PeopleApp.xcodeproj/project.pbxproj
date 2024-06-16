@@ -43,6 +43,18 @@
 		45EDD9FC2C1D7B55003DABE9 /* OnFirstAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDD9FB2C1D7B55003DABE9 /* OnFirstAppear.swift */; };
 		45EDDA0D2C1D8B73003DABE9 /* StaticJSONMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDDA0C2C1D8B73003DABE9 /* StaticJSONMapperTests.swift */; };
 		45EDDA122C1D953B003DABE9 /* CreateValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDDA112C1D953B003DABE9 /* CreateValidatorTests.swift */; };
+		45EDDA1C2C1E71E4003DABE9 /* PeopleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDDA1B2C1E71E4003DABE9 /* PeopleDataSource.swift */; };
+		45EDDA1E2C1E7433003DABE9 /* PeopleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDDA1D2C1E7433003DABE9 /* PeopleRepository.swift */; };
+		45EDDA202C1E744F003DABE9 /* PeopleRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDDA1F2C1E744F003DABE9 /* PeopleRepositoryImpl.swift */; };
+		45EDDA222C1E751C003DABE9 /* FetchPeopleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDDA212C1E751C003DABE9 /* FetchPeopleUseCase.swift */; };
+		45EDDA252C1E754B003DABE9 /* FetchUserDetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDDA242C1E754B003DABE9 /* FetchUserDetailsUseCase.swift */; };
+		45EDDA272C1E7570003DABE9 /* CreateUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDDA262C1E7570003DABE9 /* CreateUserUseCase.swift */; };
+		45EDDA2A2C1E7874003DABE9 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDDA292C1E7874003DABE9 /* AppDIContainer.swift */; };
+		45EDDA2F2C1E7889003DABE9 /* AddDIContainer+UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDDA2B2C1E7889003DABE9 /* AddDIContainer+UseCase.swift */; };
+		45EDDA302C1E7889003DABE9 /* AppContainer+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDDA2C2C1E7889003DABE9 /* AppContainer+DataSource.swift */; };
+		45EDDA312C1E7889003DABE9 /* AppDIContainer+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDDA2D2C1E7889003DABE9 /* AppDIContainer+ViewModel.swift */; };
+		45EDDA322C1E7889003DABE9 /* AppDIContaine+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDDA2E2C1E7889003DABE9 /* AppDIContaine+Repository.swift */; };
+		45EDDA352C1E7F77003DABE9 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDDA342C1E7F77003DABE9 /* AppRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +107,18 @@
 		45EDDA012C1D8B3A003DABE9 /* PeopleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeopleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EDDA0C2C1D8B73003DABE9 /* StaticJSONMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticJSONMapperTests.swift; sourceTree = "<group>"; };
 		45EDDA112C1D953B003DABE9 /* CreateValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateValidatorTests.swift; sourceTree = "<group>"; };
+		45EDDA1B2C1E71E4003DABE9 /* PeopleDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDataSource.swift; sourceTree = "<group>"; };
+		45EDDA1D2C1E7433003DABE9 /* PeopleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleRepository.swift; sourceTree = "<group>"; };
+		45EDDA1F2C1E744F003DABE9 /* PeopleRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleRepositoryImpl.swift; sourceTree = "<group>"; };
+		45EDDA212C1E751C003DABE9 /* FetchPeopleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPeopleUseCase.swift; sourceTree = "<group>"; };
+		45EDDA242C1E754B003DABE9 /* FetchUserDetailsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserDetailsUseCase.swift; sourceTree = "<group>"; };
+		45EDDA262C1E7570003DABE9 /* CreateUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserUseCase.swift; sourceTree = "<group>"; };
+		45EDDA292C1E7874003DABE9 /* AppDIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		45EDDA2B2C1E7889003DABE9 /* AddDIContainer+UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddDIContainer+UseCase.swift"; sourceTree = "<group>"; };
+		45EDDA2C2C1E7889003DABE9 /* AppContainer+DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppContainer+DataSource.swift"; sourceTree = "<group>"; };
+		45EDDA2D2C1E7889003DABE9 /* AppDIContainer+ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDIContainer+ViewModel.swift"; sourceTree = "<group>"; };
+		45EDDA2E2C1E7889003DABE9 /* AppDIContaine+Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDIContaine+Repository.swift"; sourceTree = "<group>"; };
+		45EDDA342C1E7F77003DABE9 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,9 +161,11 @@
 			isa = PBXGroup;
 			children = (
 				4598A1372C1AACC0009CA770 /* Info.plist */,
-				4598A1282C1AAA8C009CA770 /* Features */,
-				4598A1272C1AAA85009CA770 /* Base */,
+				45EDDA332C1E7F6C003DABE9 /* Routing */,
 				4598A1222C1AA6B8009CA770 /* Resources */,
+				4598A1272C1AAA85009CA770 /* Base */,
+				4598A1282C1AAA8C009CA770 /* Features */,
+				45EDDA282C1E785F003DABE9 /* DI */,
 				4598A1142C1AA6AF009CA770 /* PeopleAppApp.swift */,
 				4598A1162C1AA6AF009CA770 /* ContentView.swift */,
 				4598A1182C1AA6B1009CA770 /* Assets.xcassets */,
@@ -185,8 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				4598A12C2C1AAAC2009CA770 /* People */,
-				4598A12B2C1AAAB9009CA770 /* Create */,
-				4598A12A2C1AAAA2009CA770 /* Details */,
 				4598A1292C1AAA93009CA770 /* Settings */,
 			);
 			path = Features;
@@ -200,89 +224,22 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		4598A12A2C1AAAA2009CA770 /* Details */ = {
-			isa = PBXGroup;
-			children = (
-				4598A1352C1AAB09009CA770 /* Model */,
-				4598A1342C1AAB03009CA770 /* ViewModel */,
-				4598A1332C1AAAFE009CA770 /* View */,
-			);
-			path = Details;
-			sourceTree = "<group>";
-		};
-		4598A12B2C1AAAB9009CA770 /* Create */ = {
-			isa = PBXGroup;
-			children = (
-				45EDD9EE2C1D1D64003DABE9 /* Validator */,
-				4598A1322C1AAAF8009CA770 /* Model */,
-				4598A1312C1AAAF1009CA770 /* ViewModel */,
-				4598A1302C1AAAEB009CA770 /* View */,
-			);
-			path = Create;
-			sourceTree = "<group>";
-		};
 		4598A12C2C1AAAC2009CA770 /* People */ = {
 			isa = PBXGroup;
 			children = (
-				4598A12F2C1AAADE009CA770 /* Model */,
-				4598A12E2C1AAAD7009CA770 /* ViewModel */,
-				4598A12D2C1AAACB009CA770 /* View */,
+				45EDDA132C1E6EC3003DABE9 /* Domain */,
+				45EDDA152C1E6ED8003DABE9 /* Data */,
+				45EDDA162C1E6EDF003DABE9 /* Presentation */,
 			);
 			path = People;
-			sourceTree = "<group>";
-		};
-		4598A12D2C1AAACB009CA770 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				4598A14A2C1AC546009CA770 /* PeopleView.swift */,
-				4598A1502C1ACBCC009CA770 /* PersonItemView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		4598A12E2C1AAAD7009CA770 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				4598A14E2C1AC58E009CA770 /* PeopleViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		4598A12F2C1AAADE009CA770 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				4598A13F2C1ABEA6009CA770 /* UserResponse.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		4598A1302C1AAAEB009CA770 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				45EDD9D82C1C0F76003DABE9 /* CreateView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		4598A1312C1AAAF1009CA770 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				45EDD9DA2C1C0F95003DABE9 /* CreateViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		4598A1322C1AAAF8009CA770 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				45EDD9DF2C1C281C003DABE9 /* NewPerson.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		4598A1332C1AAAFE009CA770 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4598A14A2C1AC546009CA770 /* PeopleView.swift */,
+				4598A1502C1ACBCC009CA770 /* PersonItemView.swift */,
+				45EDD9D82C1C0F76003DABE9 /* CreateView.swift */,
 				4598A1552C1AD078009CA770 /* DetailsView.swift */,
 			);
 			path = View;
@@ -291,6 +248,8 @@
 		4598A1342C1AAB03009CA770 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4598A14E2C1AC58E009CA770 /* PeopleViewModel.swift */,
+				45EDD9DA2C1C0F95003DABE9 /* CreateViewModel.swift */,
 				4598A1572C1AD091009CA770 /* DetailsViewModel.swift */,
 			);
 			path = ViewModel;
@@ -299,7 +258,9 @@
 		4598A1352C1AAB09009CA770 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4598A13F2C1ABEA6009CA770 /* UserResponse.swift */,
 				4598A13D2C1ABE37009CA770 /* UserDetailsResponse.swift */,
+				45EDD9DF2C1C281C003DABE9 /* NewPerson.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -361,6 +322,7 @@
 		45EDD9E32C1C59FE003DABE9 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				45EDD9EE2C1D1D64003DABE9 /* Validator */,
 				45EDD9E42C1C5A19003DABE9 /* ViewModifier */,
 			);
 			path = Helpers;
@@ -454,6 +416,88 @@
 				45EDDA112C1D953B003DABE9 /* CreateValidatorTests.swift */,
 			);
 			path = Validator;
+			sourceTree = "<group>";
+		};
+		45EDDA132C1E6EC3003DABE9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4598A1352C1AAB09009CA770 /* Model */,
+				45EDDA1A2C1E70A5003DABE9 /* Use case */,
+				45EDDA172C1E6F74003DABE9 /* Repositoty */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		45EDDA152C1E6ED8003DABE9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				45EDDA182C1E6F8E003DABE9 /* Datasource */,
+				45EDDA192C1E6F98003DABE9 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		45EDDA162C1E6EDF003DABE9 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4598A1332C1AAAFE009CA770 /* View */,
+				4598A1342C1AAB03009CA770 /* ViewModel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		45EDDA172C1E6F74003DABE9 /* Repositoty */ = {
+			isa = PBXGroup;
+			children = (
+				45EDDA1D2C1E7433003DABE9 /* PeopleRepository.swift */,
+			);
+			path = Repositoty;
+			sourceTree = "<group>";
+		};
+		45EDDA182C1E6F8E003DABE9 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				45EDDA1B2C1E71E4003DABE9 /* PeopleDataSource.swift */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		45EDDA192C1E6F98003DABE9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				45EDDA1F2C1E744F003DABE9 /* PeopleRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		45EDDA1A2C1E70A5003DABE9 /* Use case */ = {
+			isa = PBXGroup;
+			children = (
+				45EDDA212C1E751C003DABE9 /* FetchPeopleUseCase.swift */,
+				45EDDA242C1E754B003DABE9 /* FetchUserDetailsUseCase.swift */,
+				45EDDA262C1E7570003DABE9 /* CreateUserUseCase.swift */,
+			);
+			path = "Use case";
+			sourceTree = "<group>";
+		};
+		45EDDA282C1E785F003DABE9 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				45EDDA292C1E7874003DABE9 /* AppDIContainer.swift */,
+				45EDDA2B2C1E7889003DABE9 /* AddDIContainer+UseCase.swift */,
+				45EDDA2C2C1E7889003DABE9 /* AppContainer+DataSource.swift */,
+				45EDDA2E2C1E7889003DABE9 /* AppDIContaine+Repository.swift */,
+				45EDDA2D2C1E7889003DABE9 /* AppDIContainer+ViewModel.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		45EDDA332C1E7F6C003DABE9 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				45EDDA342C1E7F77003DABE9 /* AppRouter.swift */,
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -559,17 +603,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				4598A14F2C1AC58E009CA770 /* PeopleViewModel.swift in Sources */,
+				45EDDA222C1E751C003DABE9 /* FetchPeopleUseCase.swift in Sources */,
+				45EDDA302C1E7889003DABE9 /* AppContainer+DataSource.swift in Sources */,
 				45EDD9FA2C1D6ED6003DABE9 /* Endpoint.swift in Sources */,
 				4598A1562C1AD078009CA770 /* DetailsView.swift in Sources */,
+				45EDDA1C2C1E71E4003DABE9 /* PeopleDataSource.swift in Sources */,
 				45EDD9D92C1C0F76003DABE9 /* CreateView.swift in Sources */,
 				4598A1582C1AD091009CA770 /* DetailsViewModel.swift in Sources */,
 				4598A1242C1AA6CA009CA770 /* Symbols.swift in Sources */,
+				45EDDA2A2C1E7874003DABE9 /* AppDIContainer.swift in Sources */,
 				45EDD9D72C1C0C66003DABE9 /* JSONOptionType.swift in Sources */,
+				45EDDA252C1E754B003DABE9 /* FetchUserDetailsUseCase.swift in Sources */,
 				45EDD9DB2C1C0F95003DABE9 /* CreateViewModel.swift in Sources */,
 				45EDD9F02C1D1D84003DABE9 /* CreateValidator.swift in Sources */,
 				45EDD9F62C1D6B8E003DABE9 /* UserDefaultKeys.swift in Sources */,
+				45EDDA322C1E7889003DABE9 /* AppDIContaine+Repository.swift in Sources */,
 				4598A14B2C1AC546009CA770 /* PeopleView.swift in Sources */,
 				45EDD9E22C1C535E003DABE9 /* ViewState.swift in Sources */,
+				45EDDA312C1E7889003DABE9 /* AppDIContainer+ViewModel.swift in Sources */,
+				45EDDA2F2C1E7889003DABE9 /* AddDIContainer+UseCase.swift in Sources */,
 				45EDD9FC2C1D7B55003DABE9 /* OnFirstAppear.swift in Sources */,
 				4598A13E2C1ABE37009CA770 /* UserDetailsResponse.swift in Sources */,
 				45EDD9EA2C1C5FF5003DABE9 /* CheckmarkPopoverView.swift in Sources */,
@@ -577,9 +629,12 @@
 				4598A1542C1ACC9B009CA770 /* PillView.swift in Sources */,
 				4598A1492C1AC08D009CA770 /* StaticJSONMapper.swift in Sources */,
 				45EDD9ED2C1C6577003DABE9 /* View+Navigation.swift in Sources */,
+				45EDDA272C1E7570003DABE9 /* CreateUserUseCase.swift in Sources */,
 				4598A1262C1AA8F5009CA770 /* Theme.swift in Sources */,
 				4598A1172C1AA6AF009CA770 /* ContentView.swift in Sources */,
+				45EDDA1E2C1E7433003DABE9 /* PeopleRepository.swift in Sources */,
 				4598A1152C1AA6AF009CA770 /* PeopleAppApp.swift in Sources */,
+				45EDDA352C1E7F77003DABE9 /* AppRouter.swift in Sources */,
 				45EDD9E02C1C281C003DABE9 /* NewPerson.swift in Sources */,
 				45EDD9F82C1D6BAB003DABE9 /* SettingsView.swift in Sources */,
 				4598A1462C1AC031009CA770 /* Support.swift in Sources */,
@@ -587,6 +642,7 @@
 				45EDD9F32C1D6B7D003DABE9 /* HapticsManager.swift in Sources */,
 				45EDD9E82C1C5C81003DABE9 /* AlertModifier.swift in Sources */,
 				45EDD9DE2C1C151B003DABE9 /* HTTPClient.swift in Sources */,
+				45EDDA202C1E744F003DABE9 /* PeopleRepositoryImpl.swift in Sources */,
 				4598A1442C1AC02D009CA770 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

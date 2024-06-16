@@ -18,7 +18,13 @@ final class CreateViewModel: ObservableObject {
     // MARK: - Published
     @Published private(set) var dataModel = CreateViewDataModel()
     
+    // MARK: - Properties
+    private let createUserUseCase: CreateUserUseCase
     private let validator = CreateValidatorImpl()
+    
+    init(createUserUseCase: CreateUserUseCase){
+        self.createUserUseCase = createUserUseCase
+    }
     
     // MARK: - Computed Properties
     var firstName: Binding<String> {
@@ -81,7 +87,7 @@ final class CreateViewModel: ObservableObject {
             let data = try? encoder.encode(dataModel.newPerson)
             
             do {
-                try await HTTPClient.shared.request(endpoint: .create(data: data) )
+                try await createUserUseCase.createUser(data: data)
                 self.dataModel.viewState = .loaded
             } catch {
                 self.dataModel.viewState = .loadedWithError

@@ -10,10 +10,16 @@ import SwiftUI
 struct DetailsView: View {
     
     // MARK: - State Object
-    @StateObject private var vm = DetailsViewModel()
+    @StateObject private var vm: DetailsViewModel
     
     // MARK: - Properties
     let userId: Int
+    
+    // MARK: - Initializer
+    init(VM: DetailsViewModel, userId: Int) {
+        _vm = StateObject(wrappedValue: VM)
+        self.userId = userId
+    }
     
     // MARK: - Body
     var body: some View {
@@ -198,5 +204,5 @@ private extension DetailsView {
 }
 
 #Preview {
-    DetailsView(userId: 1)
+    DetailsView(VM: AppDIContainer.shared.makeDetailsViewModel(), userId: 1)
 }

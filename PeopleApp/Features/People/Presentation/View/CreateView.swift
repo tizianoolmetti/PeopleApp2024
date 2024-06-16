@@ -13,13 +13,22 @@ struct CreateView: View {
     @Environment(\.dismiss) private var dismiss
     
     // MARK: - StateObject
-    @StateObject private var vm = CreateViewModel()
+    @StateObject private var vm: CreateViewModel
     
     // MARK: - FocusState
     @FocusState private var focusedField: Field?
     
     // MARK: - Properties
-    let successHandler: () -> Void
+    let successHandler: () -> Void?
+    
+    // MARK: - Initializer
+    
+    init(vm: CreateViewModel,
+         successHandler: @escaping () -> Void = {}
+    ) {
+        _vm = StateObject(wrappedValue: vm)
+        self.successHandler = successHandler
+    }
     
     // MARK: - Body
     var body: some View {
@@ -112,7 +121,10 @@ private extension CreateView {
 // MARK: - Preview
 struct CreateView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateView(successHandler: {})
+        CreateView(
+            vm: AppDIContainer.shared.makeCreateViewModel(),
+            successHandler: {}
+        )
     }
 }
 

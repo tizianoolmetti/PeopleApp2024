@@ -18,6 +18,14 @@ final class DetailsViewModel: ObservableObject {
     // MARK: - Published
     @Published private(set) var dataModel = DetailsViewDataModel()
     
+    // MARK: - Properties
+    private let fetchDetailsUseCase: FetchUserDetailsUseCase
+    
+    // MARK: - Init
+    init(fetchDetailsUseCase: FetchUserDetailsUseCase){
+        self.fetchDetailsUseCase = fetchDetailsUseCase
+    }
+    
     // MARK: - Computed Properties
     var hasError: Binding<Bool> {
         Binding {
@@ -54,7 +62,7 @@ final class DetailsViewModel: ObservableObject {
         //userInfo = try? StaticJSONMapper.decode(from: JSONOptionType.singleUser.rawValue, type: UserDetailsResponse.self)
         
         do {
-            let response: UserDetailsResponse = try await HTTPClient.shared.request(endpoint: .details(id: userId), type: UserDetailsResponse.self)
+            let response: UserDetailsResponse = try await fetchDetailsUseCase.fetchUserDetails(userId: userId)
             dataModel.userInfo = response
             dataModel.viewState = .loaded
         } catch {
@@ -62,8 +70,6 @@ final class DetailsViewModel: ObservableObject {
             dataModel.viewState = .loadedWithError
         }
     }
-    
-    
     
     // MARK: - Completion Handler
     @MainActor
