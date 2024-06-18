@@ -9,7 +9,11 @@ import Foundation
 
 class MockFetchNextPeopleUseCase: FetchNextPeopleUseCase {
     
-    var result: Result<UserResponse, Error>? =  nil
+    var result: Result<UserResponse, Error>?
+    
+    init(result: Result<UserResponse, Error>? = nil) {
+        self.result = result
+    }
                                                        
     func fetchNextPeople(page: Int) async throws -> UserResponse {
         switch result {

@@ -2,8 +2,8 @@
     "data": {
         "id": 1,
         "email": "george.bluth@reqres.in",
-        "first_name": "George",
-        "last_name": "Bluth",
+        "first_name": "Tom",
+        "last_name": "Olmetti",
         "avatar": "https://reqres.in/img/faces/1-image.jpg"
     },
     "support": {
