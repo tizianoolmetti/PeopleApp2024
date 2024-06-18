@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - UserDetailsResponse
-struct UserDetailsResponse: Codable {
+struct UserDetailsResponse: Codable, Equatable {
     let data: User
     let support: Support
 }

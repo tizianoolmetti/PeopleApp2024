@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct NewPerson: Codable {
+struct NewPerson: Codable, Equatable {
     var firstName: String = ""
     var lastName: String = ""
     var job: String = ""

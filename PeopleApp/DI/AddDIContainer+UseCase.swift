@@ -9,9 +9,13 @@ import Foundation
 
 extension AppDIContainer {
     
-    //MARK: - People
+    //MARK: - People UseCase
     func makeFetchPeopleUseCase() -> FetchPeopleUseCase {
         return FetchPeopleUseCaseImpl(repository: makePeopleRepository())
+    }
+    
+    func makeFetchNextPeopleUseCase() -> FetchNextPeopleUseCase {
+        return FetchNextPeopleUseCaseImpl(repository: makePeopleRepository())
     }
     
     func makeFetchUserDetailsUseCase() -> FetchUserDetailsUseCase {

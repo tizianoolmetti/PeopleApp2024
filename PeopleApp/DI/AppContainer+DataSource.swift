@@ -7,7 +7,7 @@
 
 import Foundation
 extension AppDIContainer {
-    //MARK: - People
+    //MARK: - People Data Source
     func makePeopleDataSource() -> PeopleDataSource {
         return PeopleDataSourceImpl()
     }

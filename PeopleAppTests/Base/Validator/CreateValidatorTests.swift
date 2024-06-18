@@ -51,4 +51,5 @@ class CreateValidatorTests: XCTestCase {
         
         XCTAssertNoThrow(try sut.validate(newPerson))
     }
+    
 }

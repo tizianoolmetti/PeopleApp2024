@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - HTTPClientError
-enum HTTPClientError: LocalizedError {
+enum HTTPClientError: LocalizedError, Equatable {
     case invalidURL
     case invalidStatusCode(statusCode: Int)
     case invalidData
@@ -32,18 +32,75 @@ enum HTTPClientError: LocalizedError {
             return error
         }
     }
+    
 }
 
+// MARK: - Make HTTPClientError Equatable
+//extension HTTPClientError: Equatable {
+//    static func == (lhs: HTTPClientError, rhs: HTTPClientError) -> Bool {
+//        switch (lhs, rhs) {
+//        case (.invalidURL, .invalidURL):
+//            return true
+//        case (.invalidStatusCode(let lhsStatusCode), .invalidStatusCode(let rhsStatusCode)):
+//            return lhsStatusCode == rhsStatusCode
+//        case (.invalidData, .invalidData):
+//            return true
+//        case (.decodingError, .decodingError):
+//            return true
+//        case (.sessionError, .sessionError):
+//            return true
+//        case (.customError(let lhsError), .customError(let rhsError)):
+//            return lhsError == rhsError
+//        default:
+//            return false
+//        }
+//    }
+//}
+
+protocol HTTPClientProtocol {
+    
+    func request<T: Codable>(
+        session: URLSession,
+        endpoint: Endpoint,
+        type: T.Type
+    ) async throws -> T
+    
+    func request(
+        session: URLSession,
+        endpoint: Endpoint
+    ) async throws
+}
+
+extension HTTPClientProtocol {
+    
+    func request<T: Codable>(
+        session: URLSession = URLSession.shared,
+        endpoint: Endpoint,
+        type: T.Type
+    ) async throws -> T {
+        // Provide the default implementation or just call the protocol method
+        try await request(session: session, endpoint: endpoint, type: type)
+    }
+    
+    func request(
+        session: URLSession = URLSession.shared,
+        endpoint: Endpoint
+    ) async throws {
+        // Provide the default implementation or just call the protocol method
+        try await request(session: session, endpoint: endpoint)
+    }
+}
 
 // MARK: - HTTPClient
-final class HTTPClient {
+final class HTTPClient: HTTPClientProtocol {
     
     static let shared = HTTPClient()
     
-    private init() {}
+    init() {}
     
     // GET: Using completion Handler
     func request<T: Codable>(
+        session: URLSession = URLSession.shared,
         endpoint: Endpoint,
         type: T.Type,
         completion: @escaping ((Result<T, Error>) -> Void)
@@ -56,7 +113,7 @@ final class HTTPClient {
         
         let request = buildRequest(methodType: endpoint.methodType, url: url)
         
-        let dataTask = URLSession.shared.dataTask(with: request) { data, response, error in
+        let dataTask = session.dataTask(with: request) { data, response, error in
             guard error == nil else {
                 completion(.failure(HTTPClientError.customError(error: "URLSession Error")))
                 return
@@ -88,7 +145,11 @@ final class HTTPClient {
     }
     
     // GET: Using asynAwait
-    func request<T: Codable>(endpoint: Endpoint, type: T.Type) async throws -> T {
+    func request<T: Codable>(
+        session: URLSession = URLSession.shared,
+        endpoint: Endpoint,
+        type: T.Type
+    ) async throws -> T {
         
         guard let url = endpoint.url else {
             throw HTTPClientError.invalidURL
@@ -96,7 +157,7 @@ final class HTTPClient {
         
         let request = buildRequest(methodType: endpoint.methodType, url: url)
         
-        let (data, response) = try await URLSession.shared.data(for: request)
+        let (data, response) = try await session.data(for: request)
         
         //Validate HTTP Response
         do {
@@ -118,8 +179,10 @@ final class HTTPClient {
     
     // POST: Using completion Handler
     
-    func request(endpoint: Endpoint,
-                 completion: @escaping ((Result<Void, Error>) -> Void)) {
+    func request(
+        session: URLSession = URLSession.shared,
+        endpoint: Endpoint,
+        completion: @escaping ((Result<Void, Error>) -> Void)) {
         
         guard let url = endpoint.url else {
             completion(.failure(HTTPClientError.invalidURL))
@@ -128,7 +191,7 @@ final class HTTPClient {
         
         let request = buildRequest(methodType: endpoint.methodType, url: url)
         
-        let dataTask = URLSession.shared.dataTask(with: request) { data, response, error in
+            let dataTask = session.dataTask(with: request) { data, response, error in
             guard error == nil else {
                 completion(.failure(HTTPClientError.customError(error: "URLSession Error")))
                 return
@@ -149,7 +212,7 @@ final class HTTPClient {
     
     // POST: Using completion Handler
     
-    func request(endpoint: Endpoint) async throws{
+    func request(session: URLSession = URLSession.shared, endpoint: Endpoint) async throws{
         
         guard let url = endpoint.url else {
             throw HTTPClientError.invalidURL
@@ -157,7 +220,7 @@ final class HTTPClient {
         
         let request = buildRequest(methodType: endpoint.methodType, url: url)
         
-        let (_, response) = try await URLSession.shared.data(for: request)
+        let (_, response) = try await session.data(for: request)
         
         //Validate HTTP Response
         do {
@@ -194,4 +257,6 @@ extension HTTPClient {
         }
     }
 }
+
+
 

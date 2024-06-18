@@ -16,14 +16,14 @@ struct DetailsViewDataModel {
 final class DetailsViewModel: ObservableObject {
     
     // MARK: - Published
-    @Published private(set) var dataModel = DetailsViewDataModel()
+    @Published var dataModel = DetailsViewDataModel()
     
     // MARK: - Properties
-    private let fetchDetailsUseCase: FetchUserDetailsUseCase
+    private let fetchUserDetailsUseCase: FetchUserDetailsUseCase
     
     // MARK: - Init
-    init(fetchDetailsUseCase: FetchUserDetailsUseCase){
-        self.fetchDetailsUseCase = fetchDetailsUseCase
+    init(fetchUserDetailsUseCase: FetchUserDetailsUseCase){
+        self.fetchUserDetailsUseCase = fetchUserDetailsUseCase
     }
     
     // MARK: - Computed Properties
@@ -62,7 +62,7 @@ final class DetailsViewModel: ObservableObject {
         //userInfo = try? StaticJSONMapper.decode(from: JSONOptionType.singleUser.rawValue, type: UserDetailsResponse.self)
         
         do {
-            let response: UserDetailsResponse = try await fetchDetailsUseCase.fetchUserDetails(userId: userId)
+            let response: UserDetailsResponse = try await fetchUserDetailsUseCase.fetchUserDetails(userId: userId)
             dataModel.userInfo = response
             dataModel.viewState = .loaded
         } catch {
@@ -72,25 +72,25 @@ final class DetailsViewModel: ObservableObject {
     }
     
     // MARK: - Completion Handler
-    @MainActor
-    func loadData(userId: Int) {
-        dataModel.viewState = .loading
-        
-        //Mock data
-        //var userInfo: UserDetailsResponse?
-        //userInfo = try? StaticJSONMapper.decode(from: JSONOptionType.singleUser.rawValue, type: UserDetailsResponse.self)
-        
-        HTTPClient.shared.request(endpoint: .details(id: userId), type: UserDetailsResponse.self) { [weak self] result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let response):
-                    self?.dataModel.userInfo = response
-                    self?.dataModel.viewState = .loaded
-                case .failure(let error):
-                    self?.dataModel.networkingError = error as? HTTPClientError
-                    self?.dataModel.viewState = .loadedWithError
-                }
-            }
-        }
-    }
+//    @MainActor
+//    func loadData(userId: Int) {
+//        dataModel.viewState = .loading
+//        
+//        //Mock data
+//        //var userInfo: UserDetailsResponse?
+//        //userInfo = try? StaticJSONMapper.decode(from: JSONOptionType.singleUser.rawValue, type: UserDetailsResponse.self)
+//        
+//        HTTPClient.shared.request(endpoint: .details(id: userId), type: UserDetailsResponse.self) { [weak self] result in
+//            DispatchQueue.main.async {
+//                switch result {
+//                case .success(let response):
+//                    self?.dataModel.userInfo = response
+//                    self?.dataModel.viewState = .loaded
+//                case .failure(let error):
+//                    self?.dataModel.networkingError = error as? HTTPClientError
+//                    self?.dataModel.viewState = .loadedWithError
+//                }
+//            }
+//        }
+//    }
 }

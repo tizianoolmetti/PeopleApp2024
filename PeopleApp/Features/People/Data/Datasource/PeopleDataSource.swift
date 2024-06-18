@@ -15,7 +15,11 @@ protocol PeopleDataSource {
 
 class PeopleDataSourceImpl: PeopleDataSource {
     
-    private let httpClient = HTTPClient.shared
+    let httpClient: HTTPClientProtocol
+    
+    init(httpClient: HTTPClientProtocol = HTTPClient() ) {
+        self.httpClient = httpClient
+    }
     
     func fetchPeople(page: Int) async throws -> UserResponse {
         do {

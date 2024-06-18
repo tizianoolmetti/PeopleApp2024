@@ -7,7 +7,7 @@
 import Foundation
 
 // MARK: - UserResponse
-struct UserResponse: Codable {
+struct UserResponse: Codable, Equatable {
     let page, perPage, total, totalPages: Int
     let data: [User]
     let support: Support
