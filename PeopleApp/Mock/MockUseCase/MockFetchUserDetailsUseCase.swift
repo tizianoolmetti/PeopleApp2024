@@ -9,7 +9,11 @@ import Foundation
 
 class MockFetchUserDetailsUseCase: FetchUserDetailsUseCase {
     
-    var result: Result<UserDetailsResponse, Error>? =  nil
+    var result: Result<UserDetailsResponse, Error>?
+    
+    init(result: Result<UserDetailsResponse, Error>? = nil) {
+        self.result = result
+    }
     
     func fetchUserDetails(userId: Int) async throws -> UserDetailsResponse {
         switch result {

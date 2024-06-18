@@ -9,7 +9,11 @@ import Foundation
 
 class MockFetchPeopleUseCase: FetchPeopleUseCase {
     
-    var result: Result<UserResponse, Error>? =  nil
+    var result: Result<UserResponse, Error>?
+    
+    init(result: Result<UserResponse, Error>? = nil) {
+        self.result = result
+    }
                                                        
     func fetchPeople(page: Int) async throws -> UserResponse {
         switch result {
@@ -18,7 +22,7 @@ class MockFetchPeopleUseCase: FetchPeopleUseCase {
             case .failure(let error):
                 throw error
             case .none:
-                fatalError("Result not set")
+               throw HTTPClientError.customError(error: "No result provided")
         }
     }
 }

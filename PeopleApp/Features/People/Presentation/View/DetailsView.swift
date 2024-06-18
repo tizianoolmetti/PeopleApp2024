@@ -70,6 +70,7 @@ private extension DetailsView {
                     .aspectRatio(contentMode: .fill)
                     .frame(height: 250)
                     .clipped()
+                    .accessibilityIdentifier("user_image")
             } placeholder: {
                 ProgressView()
                     .frame(height: 250)

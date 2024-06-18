@@ -114,6 +114,7 @@ private extension PeopleView {
                 }
             }
                       .padding()
+                      .accessibilityIdentifier("people_grid_view")
         }
         .refreshable { await vm.loadData() }
         .overlay(alignment:.bottom) {

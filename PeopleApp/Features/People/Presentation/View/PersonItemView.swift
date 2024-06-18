@@ -35,6 +35,7 @@ struct PersonItemView: View {
                     .font(
                         .system(.body, design: .rounded)
                     )
+                    .accessibility(identifier: "user_name_\(user.id)")
             }
             .frame(maxWidth: .infinity,
                    alignment: .leading)

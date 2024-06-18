@@ -41,6 +41,17 @@
                ReferencedContainer = "container:PeopleApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4571A8552C21321B001D731A"
+               BuildableName = "PeopleAppUITests.xctest"
+               BlueprintName = "PeopleAppUITests"
+               ReferencedContainer = "container:PeopleApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
