@@ -16,14 +16,18 @@ struct CreateViewDataModel {
 final class CreateViewModel: ObservableObject {
     
     // MARK: - Published
-    @Published private(set) var dataModel = CreateViewDataModel()
+    @Published var dataModel = CreateViewDataModel()
     
     // MARK: - Properties
     private let createUserUseCase: CreateUserUseCase
-    private let validator = CreateValidatorImpl()
+    private let validator : CreateValidator
     
-    init(createUserUseCase: CreateUserUseCase){
+    init(
+        createUserUseCase: CreateUserUseCase,
+        validator: CreateValidator
+    ){
         self.createUserUseCase = createUserUseCase
+        self.validator = validator
     }
     
     // MARK: - Computed Properties
@@ -110,41 +114,41 @@ final class CreateViewModel: ObservableObject {
     }
     
     // MARK: - Completion Handler
-    @MainActor
-    func create() {
-        do {
-            try validator.validate(dataModel.newPerson)
-            
-            dataModel.viewState = .loading
-            let encoder = JSONEncoder()
-            let data = try? encoder.encode(dataModel.newPerson)
-            
-            HTTPClient.shared.request(endpoint: .create(data: data) ) { [weak self] result in
-                DispatchQueue.main.async {
-                    switch result {
-                    case .success():
-                        self?.dataModel.viewState = .loaded
-                    case .failure(let error):
-                        self?.dataModel.viewState = .loadedWithError
-                        if let unwrappedError = error as? HTTPClientError {
-                            self?.dataModel.formError = .networking(error: unwrappedError)
-                        }
-                    }
-                }
-            }
-        } catch {
-            self.dataModel.viewState = .loadedWithError
-            switch error {
-            case is HTTPClientError:
-                self.dataModel.formError = .networking(error: error as! HTTPClientError)
-            case is CreateValidatorError:
-                self.dataModel.formError = .validation(error: error as! CreateValidatorError)
-                haptic(.warning)
-            default:
-                self.dataModel.formError = .system(error: error)
-            }
-        }
-    }
+//    @MainActor
+//    func create() {
+//        do {
+//            try validator.validate(dataModel.newPerson)
+//            
+//            dataModel.viewState = .loading
+//            let encoder = JSONEncoder()
+//            let data = try? encoder.encode(dataModel.newPerson)
+//            
+//            HTTPClient.shared.request(endpoint: .create(data: data) ) { [weak self] result in
+//                DispatchQueue.main.async {
+//                    switch result {
+//                    case .success():
+//                        self?.dataModel.viewState = .loaded
+//                    case .failure(let error):
+//                        self?.dataModel.viewState = .loadedWithError
+//                        if let unwrappedError = error as? HTTPClientError {
+//                            self?.dataModel.formError = .networking(error: unwrappedError)
+//                        }
+//                    }
+//                }
+//            }
+//        } catch {
+//            self.dataModel.viewState = .loadedWithError
+//            switch error {
+//            case is HTTPClientError:
+//                self.dataModel.formError = .networking(error: error as! HTTPClientError)
+//            case is CreateValidatorError:
+//                self.dataModel.formError = .validation(error: error as! CreateValidatorError)
+//                haptic(.warning)
+//            default:
+//                self.dataModel.formError = .system(error: error)
+//            }
+//        }
+//    }
 }
 
 // MARK: - Form Error

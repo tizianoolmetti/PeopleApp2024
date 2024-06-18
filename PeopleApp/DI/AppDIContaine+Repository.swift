@@ -9,7 +9,7 @@ import Foundation
 
 extension AppDIContainer {
     
-    //MARK: - Assets
+    //MARK: - People Repository
     func makePeopleRepository() -> PeopleRepository {
         return PeopleRepositoryImpl(dataSource: makePeopleDataSource())
     }

@@ -26,24 +26,4 @@ struct CreateValidatorImpl: CreateValidator {
             throw CreateValidatorError.invalidJob
         }
     }
-    
-}
-
-// MARK: - Create Validator Error
-
-enum  CreateValidatorError: LocalizedError {
-    case invalidFirstName
-    case invalidLastName
-    case invalidJob
-    
-    var errorDescription: String? {
-        switch self {
-        case .invalidFirstName:
-            return "First name can't be empty"
-        case .invalidLastName:
-            return "Last name can't be empty"
-        case .invalidJob:
-            return "Job can't be empty"
-        }
-    }
 }

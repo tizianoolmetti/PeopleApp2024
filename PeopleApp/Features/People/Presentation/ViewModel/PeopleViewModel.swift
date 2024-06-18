@@ -19,17 +19,23 @@ struct PeopleViewDataModel {
 final class PeopleViewModel: ObservableObject {
     
     // MARK: - Published
-    @Published private(set) var dataModel = PeopleViewDataModel()
+    @Published var dataModel = PeopleViewDataModel()
     
     // MARK: - Properties
     private var router: AppRouter
     private let fetchPeopleUseCase: FetchPeopleUseCase
-    private var page: Int = 1
-    private var totalPage: Int?
-   
-    init(router: AppRouter, fetchPeopleUseCase: FetchPeopleUseCase){
+    private let fetchNextPeopleUseCase: FetchNextPeopleUseCase
+    private(set) var page: Int = 1
+    private(set) var totalPage: Int? = nil
+    
+    init(
+        router: AppRouter,
+        fetchPeopleUseCase: FetchPeopleUseCase,
+        fetchNextPeopleUseCase: FetchNextPeopleUseCase
+    ){
         self.router = router
         self.fetchPeopleUseCase = fetchPeopleUseCase
+        self.fetchNextPeopleUseCase = fetchNextPeopleUseCase
     }
     
     // MARK: - Computed Properties
@@ -71,10 +77,11 @@ final class PeopleViewModel: ObservableObject {
     // MARK: - Async/Await
     @MainActor
     func loadData() async {
+        reset()
         dataModel.viewState = .loading
         
         //Mock data
-//      dataModel.users = try! StaticJSONMapper.decode(from: JSONOptionType.users.rawValue, type: UserResponse.self).data
+        //      dataModel.users = try! StaticJSONMapper.decode(from: JSONOptionType.users.rawValue, type: UserResponse.self).data
         
         do {
             let response = try await fetchPeopleUseCase.fetchPeople(page: page)
@@ -88,36 +95,35 @@ final class PeopleViewModel: ObservableObject {
     }
     
     // MARK: - Completion Handler
-    func load() {
-        dataModel.viewState = .loading
-        
-        //Mock data
-//       dataModel.users = try! StaticJSONMapper.decode(from: JSONOptionType.users.rawValue, type: UserResponse.self).data
-        
-        HTTPClient.shared.request(endpoint: .people(page: page), type: UserResponse.self) { [weak self] result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let response):
-                    self?.dataModel.users = response.data
-                    self?.totalPage = response.totalPages
-                    self?.dataModel.viewState = .loaded
-                case .failure(let error):
-                    self?.dataModel.networkingError = error as? HTTPClientError
-                    self?.dataModel.viewState = .loadedWithError
-                }
-            }
-        }
-    }
+    //    func load() {
+    //        dataModel.viewState = .loading
+    //
+    //        //Mock data
+    ////       dataModel.users = try! StaticJSONMapper.decode(from: JSONOptionType.users.rawValue, type: UserResponse.self).data
+    //
+    //        HTTPClient.shared.request(endpoint: .people(page: page), type: UserResponse.self) { [weak self] result in
+    //            DispatchQueue.main.async {
+    //                switch result {
+    //                case .success(let response):
+    //                    self?.dataModel.users = response.data
+    //                    self?.totalPage = response.totalPages
+    //                    self?.dataModel.viewState = .loaded
+    //                case .failure(let error):
+    //                    self?.dataModel.networkingError = error as? HTTPClientError
+    //                    self?.dataModel.viewState = .loadedWithError
+    //                }
+    //            }
+    //        }
+    //    }
     
     @MainActor
     func loadNextPage() async {
         guard page != totalPage else { return }
         dataModel.viewState = .isFetching
-        defer { dataModel.viewState = .loaded }
         page += 1
         
         do {
-            let response = try await HTTPClient.shared.request(endpoint: .people(page: page), type: UserResponse.self)
+            let response = try await fetchNextPeopleUseCase.fetchNextPeople(page: page)
             dataModel.users += response.data
             dataModel.viewState = .loaded
         } catch {
@@ -135,7 +141,15 @@ final class PeopleViewModel: ObservableObject {
         guard let lastuser = dataModel.users.last else { return false }
         return user.id == lastuser.id
     }
-}
+    
+    func reset() {
+        if dataModel.viewState == .loaded {
+            dataModel.users.removeAll()
+            page = 1
+            totalPage = nil
+            dataModel.viewState = .none
+        }
+    }}
 
 // MARK: - Navigation
 extension PeopleViewModel {
