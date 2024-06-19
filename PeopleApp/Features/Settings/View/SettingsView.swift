@@ -24,7 +24,7 @@ struct SettingsView: View {
 private extension SettingsView {
     var haptics: some View {
         Toggle("Enable Haptics", isOn: $isHapticsEnabled)
-            .accessibilityIdentifier("hapticsToggle")
+            .accessibilityIdentifier("haptics_toggle")
     }
 }
 

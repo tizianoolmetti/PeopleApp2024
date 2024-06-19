@@ -23,13 +23,11 @@ open class AppDIContainer {
                     Symbols.person
                     Text("Home")
                 }
-            DetailsView(VM: makeDetailsViewModel(), userId: 2)
+            SettingsView()
                 .tabItem {
                     Symbols.gear
                     Text("Settings")
                 }
-                .environmentObject(makeDetailsViewModel())
         }
     }
-    
 }

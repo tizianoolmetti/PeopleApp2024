@@ -22,6 +22,13 @@ extension AppDIContainer {
     }
     
     func makeCreateViewModel() -> CreateViewModel {
+        // This is a way to test the UI with a success networking response
+        #if DEBUG
+        if UITestingHelper.isUITesting {
+            return mockCreateViewModelForUITests()
+        }
+        #endif
+        
         return CreateViewModel(createUserUseCase: makeCreateUserUseCase(),
                                validator: makeCreateValidator())
     }
@@ -58,6 +65,14 @@ extension AppDIContainer {
         } else {
             return DetailsViewModel(fetchUserDetailsUseCase: MockFetchUserDetailsUseCase(result: .failure(HTTPClientError.invalidStatusCode(statusCode: 301)))
             )
+        }
+    }
+    
+    func mockCreateViewModelForUITests() -> CreateViewModel {
+        if UITestingHelper.isCreateNetworkingSuccess {
+            return CreateViewModel(createUserUseCase: MockCreateUserUseCase(result: .success(())), validator: makeCreateValidator())
+        } else {
+            return CreateViewModel(createUserUseCase: MockCreateUserUseCase(result: .failure(HTTPClientError.invalidStatusCode(statusCode: 301))), validator: makeCreateValidator())
         }
     }
 }
