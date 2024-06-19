@@ -9,7 +9,11 @@ import Foundation
 
 class MockCreateUserUseCase: CreateUserUseCase {
     
-    var result: Result<Void, Error>? = nil
+    var result: Result<Void, Error>?
+    
+    init(result: Result<Void, Error>? = nil) {
+        self.result = result
+    }
     
     func createUser(data: Data?) async throws {
         switch result {

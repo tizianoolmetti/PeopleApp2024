@@ -77,18 +77,22 @@ private extension CreateView {
     var firstNameTextField: some View {
         TextField("First Name", text: vm.firstName)
             .focused($focusedField, equals: .firstName)
+            .accessibilityIdentifier("first_name_text_field")
+        
     }
     
     @ViewBuilder
     var lastNameTextField: some View {
         TextField("Last Name", text: vm.lastName)
             .focused($focusedField, equals: .lastName)
+            .accessibilityIdentifier("last_name_text_field")
     }
     
     @ViewBuilder
     var jobTextField: some View {
         TextField("Job", text: vm.job)
             .focused($focusedField, equals: .job)
+            .accessibilityIdentifier("job_text_field")
     }
     
     @ViewBuilder
@@ -104,6 +108,7 @@ private extension CreateView {
                 }
             }
             .disabled(vm.isLoading)
+            .accessibilityIdentifier("submit_button")
         }
     }
     
@@ -115,6 +120,7 @@ private extension CreateView {
             Text("Done")
         }
         .disabled(vm.isLoading)
+        .accessibilityIdentifier("done_button")
     }
 }
 

@@ -205,5 +205,7 @@ private extension DetailsView {
 }
 
 #Preview {
-    DetailsView(VM: AppDIContainer.shared.makeDetailsViewModel(), userId: 1)
+    NavigationView {
+        DetailsView(VM: AppDIContainer.shared.makeDetailsViewModel(), userId: 1)
+    }
 }

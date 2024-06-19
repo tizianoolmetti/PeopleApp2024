@@ -12,6 +12,7 @@ enum UiTestingIdentifier: String {
     case uiTesting = "-UI-Testing"
     case peopleNetworkingSuccess = "-People-Networking-success"
     case detailsNetworkingSuccess = "-Details-Networking-success"
+    case createNetworkingSuccess = "-Create-Networking-success"
 }
 
 struct UITestingHelper {
@@ -26,6 +27,10 @@ struct UITestingHelper {
     
     static var isDetailsNetworkingSuccess: Bool {
         return ProcessInfo.processInfo.environment[UiTestingIdentifier.detailsNetworkingSuccess.rawValue] == "true"
+    }
+    
+    static var isCreateNetworkingSuccess: Bool {
+        return ProcessInfo.processInfo.environment[UiTestingIdentifier.createNetworkingSuccess.rawValue] == "true"
     }
 }
 

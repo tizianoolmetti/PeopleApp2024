@@ -91,7 +91,7 @@ private extension PeopleView {
                 )
         }
         .disabled(vm.isLoading)
-        .accessibilityIdentifier("createBtn")
+        .accessibilityIdentifier("create_button")
     }
     
     @ViewBuilder
