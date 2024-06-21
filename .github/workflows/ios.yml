@@ -19,7 +19,7 @@ jobs:
           ruby-version: '2.7'
 
       - name: Install Bundler
-        run: gem install bundler
+        run: gem install bundler -v 2.4.22
 
       - name: Install dependencies
         run: bundle install
@@ -27,8 +27,8 @@ jobs:
       - name: Install CocoaPods
         run: bundle exec pod install --repo-update
 
-      - name: Build the app
-        run: xcodebuild -workspace PeopleApp.xcworkspace -scheme PeopleAppScheme -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=latest' build
+      - name: Set up fastlane
+        run: bundle exec fastlane install
 
-      - name: Run tests
-        run: xcodebuild test -workspace PeopleApp.xcworkspace -scheme PeopleAppScheme -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=latest'
+      - name: Build and run tests
+        run: bundle exec fastlane test
