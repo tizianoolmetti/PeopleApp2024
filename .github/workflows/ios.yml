@@ -1,34 +1,22 @@
-name: iOS Pull Request Workflow
+# This workflow will build a Swift project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
+
+name: Swift
 
 on:
+  push:
+    branches: [ "main" ]
   pull_request:
-    branches:
-      - main
+    branches: [ "main" ]
 
 jobs:
-  build-and-test:
+  build:
+
     runs-on: macos-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '2.7'
-
-      - name: Install Bundler
-        run: gem install bundler -v 2.4.22
-
-      - name: Install dependencies
-        run: bundle install
-
-      - name: Install CocoaPods
-        run: bundle exec pod install --repo-update
-
-      - name: Set up fastlane
-        run: bundle exec fastlane install
-
-      - name: Build and run tests
-        run: bundle exec fastlane test
+    - uses: actions/checkout@v4
+    - name: Build
+      run: swift build -v
+    - name: Run tests
+      run: swift test -v
