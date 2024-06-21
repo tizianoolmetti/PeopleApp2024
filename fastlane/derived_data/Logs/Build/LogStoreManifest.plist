@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>11</integer>
+	<key>logs</key>
+	<dict>
+		<key>627D9E69-78A6-48AB-9E36-E36DD40FAA2D</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>627D9E69-78A6-48AB-9E36-E36DD40FAA2D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PeopleApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PeopleApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Cleaning project PeopleApp with scheme PeopleApp and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>740623893.73059297</real>
+			<key>timeStoppedRecording</key>
+			<real>740623894.05590701</real>
+			<key>title</key>
+			<string>Cleaning project PeopleApp with scheme PeopleApp and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>627D9E69-78A6-48AB-9E36-E36DD40FAA2D</string>
+		</dict>
+		<key>AC03FFF3-1FB3-4FF6-87EC-7858A9848613</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AC03FFF3-1FB3-4FF6-87EC-7858A9848613.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>1</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PeopleApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PeopleApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project PeopleApp with scheme PeopleApp and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>740623894.06791496</real>
+			<key>timeStoppedRecording</key>
+			<real>740623901.180565</real>
+			<key>title</key>
+			<string>Building project PeopleApp with scheme PeopleApp and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>AC03FFF3-1FB3-4FF6-87EC-7858A9848613</string>
+		</dict>
+		<key>B485DC43-6BDF-488E-982A-C61CAC3F3BA6</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B485DC43-6BDF-488E-982A-C61CAC3F3BA6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>1</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PeopleApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PeopleApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Testing project PeopleApp with scheme PeopleApp</string>
+			<key>timeStartedRecording</key>
+			<real>740623758.14694703</real>
+			<key>timeStoppedRecording</key>
+			<real>740623759.33931005</real>
+			<key>title</key>
+			<string>Testing project PeopleApp with scheme PeopleApp</string>
+			<key>uniqueIdentifier</key>
+			<string>B485DC43-6BDF-488E-982A-C61CAC3F3BA6</string>
+		</dict>
+		<key>DBD6B7E5-62F2-447F-AEC3-38DDA75FFB31</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DBD6B7E5-62F2-447F-AEC3-38DDA75FFB31.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>1</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PeopleApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PeopleApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Testing project PeopleApp with scheme PeopleApp</string>
+			<key>timeStartedRecording</key>
+			<real>740623901.190171</real>
+			<key>timeStoppedRecording</key>
+			<real>740623902.28594303</real>
+			<key>title</key>
+			<string>Testing project PeopleApp with scheme PeopleApp</string>
+			<key>uniqueIdentifier</key>
+			<string>DBD6B7E5-62F2-447F-AEC3-38DDA75FFB31</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

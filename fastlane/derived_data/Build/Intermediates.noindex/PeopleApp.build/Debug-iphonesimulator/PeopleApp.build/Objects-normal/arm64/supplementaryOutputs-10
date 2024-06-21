@@ -1,0 +1,30 @@
+"/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleApp/Base/Model/User.swift":
+  object: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/User.o"
+  swift-dependencies: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/User.swiftdeps"
+  diagnostics: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/User.dia"
+  dependencies: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/User.d"
+  const-values: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/User.swiftconstvalues"
+"/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleApp/Base/API/HTTPClient.swift":
+  swift-dependencies: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/HTTPClient.swiftdeps"
+  dependencies: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/HTTPClient.d"
+  object: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/HTTPClient.o"
+  const-values: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/HTTPClient.swiftconstvalues"
+  diagnostics: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/HTTPClient.dia"
+"/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/DerivedSources/GeneratedAssetSymbols.swift":
+  diagnostics: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/GeneratedAssetSymbols.dia"
+  object: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  dependencies: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/GeneratedAssetSymbols.d"
+  const-values: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues"
+  swift-dependencies: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps"
+"/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleApp/Features/People/Data/Repository/PeopleRepositoryImpl.swift":
+  const-values: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/PeopleRepositoryImpl.swiftconstvalues"
+  diagnostics: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/PeopleRepositoryImpl.dia"
+  dependencies: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/PeopleRepositoryImpl.d"
+  object: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/PeopleRepositoryImpl.o"
+  swift-dependencies: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/PeopleRepositoryImpl.swiftdeps"
+"/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleApp/Mock/MockUseCase/MockFetchUserDetailsUseCase.swift":
+  swift-dependencies: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/MockFetchUserDetailsUseCase.swiftdeps"
+  diagnostics: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/MockFetchUserDetailsUseCase.dia"
+  dependencies: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/MockFetchUserDetailsUseCase.d"
+  object: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/MockFetchUserDetailsUseCase.o"
+  const-values: "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleApp.build/Objects-normal/arm64/MockFetchUserDetailsUseCase.swiftconstvalues"

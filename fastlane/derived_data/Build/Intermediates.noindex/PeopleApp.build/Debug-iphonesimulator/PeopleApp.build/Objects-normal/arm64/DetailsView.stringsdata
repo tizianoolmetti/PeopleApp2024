@@ -1,0 +1,24 @@
+{
+  "source": "/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleApp/Features/People/Presentation/View/DetailsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Details"
+      },
+      {
+        "comment": "",
+        "key": "First Name"
+      },
+      {
+        "comment": "",
+        "key": "Last Name"
+      },
+      {
+        "comment": "",
+        "key": "Email"
+      }
+    ]
+  },
+  "version": 1
+}

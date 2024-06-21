@@ -1,0 +1,148 @@
+{
+  "" : {
+    "diagnostics" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleAppTests-master.dia",
+    "emit-module-dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleAppTests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleAppTests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleAppTests-master.swiftdeps"
+  },
+  "/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Base/API/EndpointTests.swift" : {
+    "const-values" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/EndpointTests.swiftconstvalues",
+    "dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/EndpointTests.d",
+    "diagnostics" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/EndpointTests.dia",
+    "index-unit-output-path" : "/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/EndpointTests.o",
+    "llvm-bc" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/EndpointTests.bc",
+    "object" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/EndpointTests.o",
+    "swift-dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/EndpointTests.swiftdeps",
+    "swiftmodule" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/EndpointTests~partial.swiftmodule"
+  },
+  "/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Base/API/HTTPClientTests.swift" : {
+    "const-values" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/HTTPClientTests.swiftconstvalues",
+    "dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/HTTPClientTests.d",
+    "diagnostics" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/HTTPClientTests.dia",
+    "index-unit-output-path" : "/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/HTTPClientTests.o",
+    "llvm-bc" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/HTTPClientTests.bc",
+    "object" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/HTTPClientTests.o",
+    "swift-dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/HTTPClientTests.swiftdeps",
+    "swiftmodule" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/HTTPClientTests~partial.swiftmodule"
+  },
+  "/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Base/Mapper/StaticJSONMapperTests.swift" : {
+    "const-values" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/StaticJSONMapperTests.swiftconstvalues",
+    "dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/StaticJSONMapperTests.d",
+    "diagnostics" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/StaticJSONMapperTests.dia",
+    "index-unit-output-path" : "/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/StaticJSONMapperTests.o",
+    "llvm-bc" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/StaticJSONMapperTests.bc",
+    "object" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/StaticJSONMapperTests.o",
+    "swift-dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/StaticJSONMapperTests.swiftdeps",
+    "swiftmodule" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/StaticJSONMapperTests~partial.swiftmodule"
+  },
+  "/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Base/Validator/CreateValidatorErrorTests.swift" : {
+    "const-values" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateValidatorErrorTests.swiftconstvalues",
+    "dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateValidatorErrorTests.d",
+    "diagnostics" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateValidatorErrorTests.dia",
+    "index-unit-output-path" : "/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateValidatorErrorTests.o",
+    "llvm-bc" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateValidatorErrorTests.bc",
+    "object" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateValidatorErrorTests.o",
+    "swift-dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateValidatorErrorTests.swiftdeps",
+    "swiftmodule" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateValidatorErrorTests~partial.swiftmodule"
+  },
+  "/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Base/Validator/CreateValidatorTests.swift" : {
+    "const-values" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateValidatorTests.swiftconstvalues",
+    "dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateValidatorTests.d",
+    "diagnostics" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateValidatorTests.dia",
+    "index-unit-output-path" : "/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateValidatorTests.o",
+    "llvm-bc" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateValidatorTests.bc",
+    "object" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateValidatorTests.o",
+    "swift-dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateValidatorTests.swiftdeps",
+    "swiftmodule" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateValidatorTests~partial.swiftmodule"
+  },
+  "/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Feature/People/Data/Datasource/PeopleDataSourceTests.swift" : {
+    "const-values" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleDataSourceTests.swiftconstvalues",
+    "dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleDataSourceTests.d",
+    "diagnostics" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleDataSourceTests.dia",
+    "index-unit-output-path" : "/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleDataSourceTests.o",
+    "llvm-bc" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleDataSourceTests.bc",
+    "object" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleDataSourceTests.o",
+    "swift-dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleDataSourceTests.swiftdeps",
+    "swiftmodule" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleDataSourceTests~partial.swiftmodule"
+  },
+  "/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Feature/People/Data/Repositoty/PeopleRepositoryTests.swift" : {
+    "const-values" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleRepositoryTests.swiftconstvalues",
+    "dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleRepositoryTests.d",
+    "diagnostics" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleRepositoryTests.dia",
+    "index-unit-output-path" : "/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleRepositoryTests.o",
+    "llvm-bc" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleRepositoryTests.bc",
+    "object" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleRepositoryTests.o",
+    "swift-dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleRepositoryTests.swiftdeps",
+    "swiftmodule" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleRepositoryTests~partial.swiftmodule"
+  },
+  "/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Feature/People/Domain/Use case/CreateUserUseCaseTests.swift" : {
+    "const-values" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateUserUseCaseTests.swiftconstvalues",
+    "dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateUserUseCaseTests.d",
+    "diagnostics" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateUserUseCaseTests.dia",
+    "index-unit-output-path" : "/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateUserUseCaseTests.o",
+    "llvm-bc" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateUserUseCaseTests.bc",
+    "object" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateUserUseCaseTests.o",
+    "swift-dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateUserUseCaseTests.swiftdeps",
+    "swiftmodule" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateUserUseCaseTests~partial.swiftmodule"
+  },
+  "/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Feature/People/Domain/Use case/FetchNextPeopleUseCaseTests.swift" : {
+    "const-values" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchNextPeopleUseCaseTests.swiftconstvalues",
+    "dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchNextPeopleUseCaseTests.d",
+    "diagnostics" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchNextPeopleUseCaseTests.dia",
+    "index-unit-output-path" : "/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchNextPeopleUseCaseTests.o",
+    "llvm-bc" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchNextPeopleUseCaseTests.bc",
+    "object" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchNextPeopleUseCaseTests.o",
+    "swift-dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchNextPeopleUseCaseTests.swiftdeps",
+    "swiftmodule" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchNextPeopleUseCaseTests~partial.swiftmodule"
+  },
+  "/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Feature/People/Domain/Use case/FetchPeopleUseCaseTests.swift" : {
+    "const-values" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchPeopleUseCaseTests.swiftconstvalues",
+    "dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchPeopleUseCaseTests.d",
+    "diagnostics" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchPeopleUseCaseTests.dia",
+    "index-unit-output-path" : "/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchPeopleUseCaseTests.o",
+    "llvm-bc" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchPeopleUseCaseTests.bc",
+    "object" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchPeopleUseCaseTests.o",
+    "swift-dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchPeopleUseCaseTests.swiftdeps",
+    "swiftmodule" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchPeopleUseCaseTests~partial.swiftmodule"
+  },
+  "/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Feature/People/Domain/Use case/FetchUserDetailsUseCaseTests.swift" : {
+    "const-values" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchUserDetailsUseCaseTests.swiftconstvalues",
+    "dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchUserDetailsUseCaseTests.d",
+    "diagnostics" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchUserDetailsUseCaseTests.dia",
+    "index-unit-output-path" : "/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchUserDetailsUseCaseTests.o",
+    "llvm-bc" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchUserDetailsUseCaseTests.bc",
+    "object" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchUserDetailsUseCaseTests.o",
+    "swift-dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchUserDetailsUseCaseTests.swiftdeps",
+    "swiftmodule" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/FetchUserDetailsUseCaseTests~partial.swiftmodule"
+  },
+  "/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Feature/People/Presentation/ViewModel/CreateViewModelTests.swift" : {
+    "const-values" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateViewModelTests.swiftconstvalues",
+    "dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateViewModelTests.d",
+    "diagnostics" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateViewModelTests.dia",
+    "index-unit-output-path" : "/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateViewModelTests.o",
+    "llvm-bc" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateViewModelTests.bc",
+    "object" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateViewModelTests.o",
+    "swift-dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateViewModelTests.swiftdeps",
+    "swiftmodule" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/CreateViewModelTests~partial.swiftmodule"
+  },
+  "/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Feature/People/Presentation/ViewModel/DetailsViewModelTests.swift" : {
+    "const-values" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/DetailsViewModelTests.swiftconstvalues",
+    "dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/DetailsViewModelTests.d",
+    "diagnostics" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/DetailsViewModelTests.dia",
+    "index-unit-output-path" : "/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/DetailsViewModelTests.o",
+    "llvm-bc" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/DetailsViewModelTests.bc",
+    "object" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/DetailsViewModelTests.o",
+    "swift-dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/DetailsViewModelTests.swiftdeps",
+    "swiftmodule" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/DetailsViewModelTests~partial.swiftmodule"
+  },
+  "/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Feature/People/Presentation/ViewModel/PeopleViewModelTests.swift" : {
+    "const-values" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleViewModelTests.swiftconstvalues",
+    "dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleViewModelTests.d",
+    "diagnostics" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleViewModelTests.dia",
+    "index-unit-output-path" : "/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleViewModelTests.o",
+    "llvm-bc" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleViewModelTests.bc",
+    "object" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleViewModelTests.o",
+    "swift-dependencies" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleViewModelTests.swiftdeps",
+    "swiftmodule" : "/Users/tom_paloit/Desktop/Learning/PeopleApp/fastlane/derived_data/Build/Intermediates.noindex/PeopleApp.build/Debug-iphonesimulator/PeopleAppTests.build/Objects-normal/arm64/PeopleViewModelTests~partial.swiftmodule"
+  }
+}

@@ -1,0 +1,14 @@
+/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Feature/People/Domain/Use\ case/FetchPeopleUseCaseTests.swift
+/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Feature/People/Data/Datasource/PeopleDataSourceTests.swift
+/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Feature/People/Presentation/ViewModel/DetailsViewModelTests.swift
+/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Base/API/HTTPClientTests.swift
+/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Feature/People/Presentation/ViewModel/PeopleViewModelTests.swift
+/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Feature/People/Domain/Use\ case/FetchUserDetailsUseCaseTests.swift
+/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Feature/People/Presentation/ViewModel/CreateViewModelTests.swift
+/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Base/Validator/CreateValidatorTests.swift
+/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Feature/People/Domain/Use\ case/FetchNextPeopleUseCaseTests.swift
+/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Base/API/EndpointTests.swift
+/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Feature/People/Data/Repositoty/PeopleRepositoryTests.swift
+/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Base/Validator/CreateValidatorErrorTests.swift
+/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Feature/People/Domain/Use\ case/CreateUserUseCaseTests.swift
+/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleAppTests/Base/Mapper/StaticJSONMapperTests.swift

@@ -1,0 +1,32 @@
+{
+  "source": "/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleApp/Features/People/Presentation/View/CreateView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Create"
+      },
+      {
+        "comment": "",
+        "key": "First Name"
+      },
+      {
+        "comment": "",
+        "key": "Last Name"
+      },
+      {
+        "comment": "",
+        "key": "Job"
+      },
+      {
+        "comment": "",
+        "key": "Submit"
+      },
+      {
+        "comment": "",
+        "key": "Done"
+      }
+    ]
+  },
+  "version": 1
+}

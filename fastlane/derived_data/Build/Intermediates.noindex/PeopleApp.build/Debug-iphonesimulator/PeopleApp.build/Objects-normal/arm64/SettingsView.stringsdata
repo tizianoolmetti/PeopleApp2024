@@ -1,0 +1,16 @@
+{
+  "source": "/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleApp/Features/Settings/View/SettingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Settings"
+      },
+      {
+        "comment": "",
+        "key": "Enable Haptics"
+      }
+    ]
+  },
+  "version": 1
+}

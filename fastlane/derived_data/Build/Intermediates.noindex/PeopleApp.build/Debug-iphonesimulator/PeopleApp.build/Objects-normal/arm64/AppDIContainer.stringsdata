@@ -1,0 +1,16 @@
+{
+  "source": "/Users/tom_paloit/Desktop/Learning/PeopleApp/PeopleApp/DI/AppDIContainer.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Home"
+      },
+      {
+        "comment": "",
+        "key": "Settings"
+      }
+    ]
+  },
+  "version": 1
+}
