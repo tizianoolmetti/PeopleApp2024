@@ -17,7 +17,7 @@ platform :ios do
   else
     scan(
       scheme: "PeopleApp",                    # Replace with your app's scheme name
-      devices: [selected_simulator],          # Use a randomly selected simulator
+      devices: ["iPhone 15"],          # Use a randomly selected simulator
       clean: true,                            # Clean the project before testing
       code_coverage: true,                    # Enable code coverage
       configuration: "Debug",                 # Use Debug configuration
@@ -38,7 +38,7 @@ platform :ios do
     else
       scan(
         scheme: "PeopleApp",                    # Replace with your app's scheme name
-        devices: [selected_simulator],          # Use a randomly selected simulator
+        devices: ["iPhone 15"],          # Use a randomly selected simulator
         clean: true,                            # Clean the project before testing
         code_coverage: true,                    # Enable code coverage
         configuration: "Debug",                 # Use Debug configuration
