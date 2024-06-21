@@ -11,7 +11,7 @@ platform :ios do
  lane :run_unit_tests do
     scan(
       scheme: "PeopleApp",                # Use your app scheme
-      devices: ["iPhone 14"],             # Specify the devices
+      devices: ["iPhone 12"],             # Specify the devices
       clean: true,                        # Clean the project before testing
       code_coverage: true,                # Enable code coverage
       configuration: "Debug",             # Use Debug configuration
@@ -25,7 +25,7 @@ platform :ios do
   lane :run_ui_tests do
     scan(
       scheme: "PeopleApp",                # Use your app scheme
-      devices: ["iPhone 14"],             # Specify the devices
+      devices: ["iPhone 12"],             # Specify the devices
       clean: true,                        # Clean the project before testing
       code_coverage: true,                # Enable code coverage
       configuration: "Debug",             # Use Debug configuration
