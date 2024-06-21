@@ -9,9 +9,11 @@ platform :ios do
   end
  desc "Run Unit tests"
  lane :run_unit_tests do
+    available_simulators = sh('xcrun simctl list devices available').stdout.strip
+    selected_simulator = available_simulators.lines.select { |line| line.include?('iOS') }.sample.split(' ')[-1]
     scan(
       scheme: "PeopleApp",                # Use your app scheme
-      devices: ["6184FB15-321E-49BC-9FF0-E7D4C091E633"],             # Specify the devices
+      devices: [selected_simulator],             # Specify the devices
       clean: true,                        # Clean the project before testing
       code_coverage: true,                # Enable code coverage
       configuration: "Debug",             # Use Debug configuration
@@ -23,9 +25,11 @@ platform :ios do
   end
   desc "Run UI tests"
   lane :run_ui_tests do
+    available_simulators = sh('xcrun simctl list devices available').stdout.strip
+    selected_simulator = available_simulators.lines.select { |line| line.include?('iOS') }.sample.split(' ')[-1]
     scan(
       scheme: "PeopleApp",                # Use your app scheme
-      devices: ["6184FB15-321E-49BC-9FF0-E7D4C091E633"],             # Specify the devices
+      devices: [selected_simulator],             # Specify the devices
       clean: true,                        # Clean the project before testing
       code_coverage: true,                # Enable code coverage
       configuration: "Debug",             # Use Debug configuration
