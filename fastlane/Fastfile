@@ -9,7 +9,7 @@ platform :ios do
   end
  desc "Run Unit tests"
  lane :run_unit_tests do
-  available_simulators = sh('xcrun simctl list devices').stdout
+  available_simulators = `xcrun simctl list devices`.strip
   selected_simulator = available_simulators.scan(/iPhone [0-9]+/).sample
 
   if selected_simulator.nil?
@@ -30,7 +30,7 @@ platform :ios do
   end
   desc "Run UI tests"
   lane :run_ui_tests do
-    available_simulators = sh('xcrun simctl list devices').stdout
+    available_simulators = `xcrun simctl list devices`.strip
     selected_simulator = available_simulators.scan(/iPhone [0-9]+/).sample
 
     if selected_simulator.nil?
