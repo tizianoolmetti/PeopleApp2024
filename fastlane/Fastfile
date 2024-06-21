@@ -9,31 +9,45 @@ platform :ios do
   end
  desc "Run Unit tests"
  lane :run_unit_tests do
+  available_simulators = sh('xcrun simctl list devices').stdout
+  selected_simulator = available_simulators.scan(/iPhone [0-9]+/).sample
+
+  if selected_simulator.nil?
+    UI.user_error!("No available simulators found.")
+  else
     scan(
-      scheme: "PeopleApp",                # Use your app scheme
-      devices: ["ED022A05-88A5-4850-8397-544046243971"],             # Specify the devices
-      clean: true,                        # Clean the project before testing
-      code_coverage: true,                # Enable code coverage
-      configuration: "Debug",             # Use Debug configuration
-      sdk: "iphonesimulator",             # Use iPhone simulator SDK
-      fail_build: true,                   # Fail the build on test failure
-      only_testing: ["PeopleAppTests"], 	# Specify the unit test target
-      output_style: "raw" 
+      scheme: "PeopleApp",                    # Replace with your app's scheme name
+      devices: [selected_simulator],          # Use a randomly selected simulator
+      clean: true,                            # Clean the project before testing
+      code_coverage: true,                    # Enable code coverage
+      configuration: "Debug",                 # Use Debug configuration
+      sdk: "iphonesimulator",                 # Use iPhone simulator SDK
+      fail_build: true,                       # Fail the build on test failure
+      only_testing: ["PeopleAppTests"],       # Specify the unit test target
+      output_style: "raw"
     )
+  end
   end
   desc "Run UI tests"
   lane :run_ui_tests do
-    scan(
-      scheme: "PeopleApp",                # Use your app scheme
-      devices: ["ED022A05-88A5-4850-8397-544046243971"],             # Specify the devices
-      clean: true,                        # Clean the project before testing
-      code_coverage: true,                # Enable code coverage
-      configuration: "Debug",             # Use Debug configuration
-      sdk: "iphonesimulator",             # Use iPhone simulator SDK
-      fail_build: true,                   # Fail the build on test failure
-      only_testing: ["PeopleAppUITests"], # Specify the unit test target
-      output_style: "raw" 
-    )
+    available_simulators = sh('xcrun simctl list devices').stdout
+    selected_simulator = available_simulators.scan(/iPhone [0-9]+/).sample
+
+    if selected_simulator.nil?
+      UI.user_error!("No available simulators found.")
+    else
+      scan(
+        scheme: "PeopleApp",                    # Replace with your app's scheme name
+        devices: [selected_simulator],          # Use a randomly selected simulator
+        clean: true,                            # Clean the project before testing
+        code_coverage: true,                    # Enable code coverage
+        configuration: "Debug",                 # Use Debug configuration
+        sdk: "iphonesimulator",                 # Use iPhone simulator SDK
+        fail_build: true,                       # Fail the build on test failure
+        only_testing: ["PeopleAppTests"],       # Specify the unit test target
+        output_style: "raw"
+      )
+    end
   end
   desc "Run all tests"
   lane :run_all_tests do
