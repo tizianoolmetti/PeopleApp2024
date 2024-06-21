@@ -1,4 +1,4 @@
-name: CI
+name: iOS Pull Request Workflow
 
 on:
   pull_request:
@@ -6,30 +6,29 @@ on:
       - main
 
 jobs:
-  test:
+  build-and-test:
     runs-on: macos-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 3.0
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7'
 
-    - name: Install Bundler
-      run: gem install bundler
+      - name: Install Bundler
+        run: gem install bundler
 
-    - name: Install dependencies
-      run: bundle install
+      - name: Install dependencies
+        run: bundle install
 
-    - name: Install Fastlane
-      run: bundle exec fastlane install_fastlane
+      - name: Install CocoaPods
+        run: bundle exec pod install --repo-update
 
-    - name: Run all tests
-      run: bundle exec fastlane run_all_tests
-      env:
-        MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
-        APPLE_ID: ${{ secrets.APPLE_ID }}
-        APPLE_APP_SPECIFIC_PASSWORD: ${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }}
+      - name: Build the app
+        run: xcodebuild -workspace PeopleApp.xcworkspace -scheme PeopleAppScheme -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=latest' build
+
+      - name: Run tests
+        run: xcodebuild test -workspace PeopleApp.xcworkspace -scheme PeopleAppScheme -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=latest'
