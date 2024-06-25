@@ -4,7 +4,6 @@
 //
 //  Created by Tom Olmetti on 18/6/2024.
 //
-#if DEBUG
 
 import Foundation
 
@@ -34,4 +33,4 @@ struct UITestingHelper {
     }
 }
 
-#endif
+

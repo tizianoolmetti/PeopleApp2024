@@ -5,7 +5,7 @@
 //  Created by Tunde Adegoroye on 20/08/2022.
 //
 
-#if DEBUG
+
 import Foundation
 
 class MockURLSessionProtocol: URLProtocol {
@@ -38,4 +38,4 @@ class MockURLSessionProtocol: URLProtocol {
         
     }
 }
-#endif
+
